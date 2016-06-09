@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <system name="hello">
-	<target name="hello">
-		<root class="HELLO" feature="make"/>
-		<setting name="console_application" value="true"/>
-		<setting name="concurrency" value="scoop"/>
+    <target name="hello">
+        <root class="HELLO" feature="make"/>
+        <setting name="console_application" value="true"/>
+        <setting name="concurrency" value="scoop"/>
         <precompile name="base_pre" location="$ISE_PRECOMP\base-scoop-safe.ecf"/>
         <library name="base" location="$ISE_LIBRARY\library\base\base-safe.ecf"/>
-		<cluster name="hello" location=".\" recursive="true">
-			<file_rule>
-				<exclude>/EIFGENs$</exclude>
-				<exclude>/CVS$</exclude>
-				<exclude>/.svn$</exclude>
+        <cluster name="hello" location=".\" recursive="true">
+            <file_rule>
+                <exclude>/EIFGENs$</exclude>
+                <exclude>/CVS$</exclude>
+                <exclude>/.svn$</exclude>
                 <exclude>/.git$</exclude>
             </file_rule>
-		</cluster>
-	</target>
+        </cluster>
+    </target>
 </system>

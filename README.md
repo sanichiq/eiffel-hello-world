@@ -1,1 +1,5 @@
 # EiffelでHello, World!
+
+```
+$ ec -finalize
+```
